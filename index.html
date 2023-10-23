@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <div class="body">
+        <p>Enter your date of birth below</p>
+        <div class="box">
+            <div class="ox">
+                <p> Day <br>
+                    <input type="number" placeholder="DD" id="day"><br>
+                    <span class="error-message" class="error-message" class="error-message" id="invalidday">Invalid
+                        Day</span>
+                </p>
+            </div>
+            <div class="th">
+                <p>Month <br>
+                    <input type="number" placeholder="MM" id="months">
+                    <span class="error-message" class="error-message" class="error-message" id="invalidmonth">Invalid
+                        Month</span>
+                </p>
+            </div>
+            <div class="ate">
+                <p>Year <br>
+                    <input type="number" placeholder="YYYY" id="years">
+                    <span id="invalidyear" class="error-message">Invalid Year</span>
+                </p>
+            </div>
+            <button onclick="calculateAge()" class="arrow">v</button>
+        </div> <br>
+        <div class="second">
+            <span> <b id="yearOutput">--- </b> years</span> <br>
+            <span><b id='monthOutput'> --- </b>months</span> <br>
+            <span><b id="dayOutput">--- </b>days</span>
+        </div>
+    </div>
+</body>
+
+</html>
